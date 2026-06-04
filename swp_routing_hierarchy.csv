@@ -1,0 +1,6 @@
+Priority_Level,Withdrawal_Source,Action,Liquidation_Runway_Formula
+1,LIQUIDCASE,Primary Withdrawal Source,=B9_Capital_Cell/Monthly_Income_Target_Cell
+2,GOLDBEES / SILVERBEES,Macro Hedge Harvesting,=SUM(B12_Cell,B13_Cell)/Monthly_Income_Target_Cell
+3,MON100 / MASPTOP50,Global Profit Harvesting,=SUM(B10_Cell,B11_Cell)/Monthly_Income_Target_Cell
+4,MOCAPITAL,Tactical Rotation,=B14_Capital_Cell/Monthly_Income_Target_Cell
+5,Core Broad Market ETFs,Strict Long-Term Protection,=SUM(B4_Cell:B8_Cell)/Monthly_Income_Target_Cell
