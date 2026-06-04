@@ -1,0 +1,8 @@
+Description,Google_Sheets_Formula_Template
+Portfolio Weight,=Current_Value/SUM(Current_Value_Column_Range)
+Target Value,=Total_Portfolio_Value_Cell*Target_Allocation_Percentage_Cell
+Rebalancing Gap,=Current_Allocation_Cell-Suggested_Allocation_Cell
+Monthly SWP,=(Total_Portfolio_Value_Cell*Target_Withdrawal_Rate_Cell)/12
+Expected Annual Income,=Total_Portfolio_Value_Cell*Expected_Blended_Yield_Cell
+Buy Signal,=IF(Close_Price_Cell<DMA20_Cell,"BUY","WAIT")
+Trend Signal,=IF(Close_Price_Cell>DMA200_Cell,"BULLISH","BEARISH")
