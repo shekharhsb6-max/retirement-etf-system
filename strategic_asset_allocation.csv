@@ -1,0 +1,12 @@
+ETF_Ticker,Asset_Class,Target_Alloc_Percent,Role
+MONIFTY500,Broad Market Core,10.00,Primary India Core Growth
+NIFTYBEES,Broad Market Core,10.00,Primary India Core Growth
+NIF100BEES,Large Cap Stability,10.00,Stability Allocation
+MIDCAPETF,Midcap Alpha,5.00,Alpha Expansion Sleeve
+JUNIORBEES,Next 50 Growth,5.00,Growth Diversification
+LIQUIDCASE,Cash & Debt,15.00,Liquidity Buffer
+GOLDBEES,Gold Hedge,7.50,Inflation Hedge
+SILVERBEES,Silver Hedge,5.00,Crisis Hedge
+MON100,US Growth,12.50,Global Growth Exposure
+MASPTOP50,Global Diversification,12.50,International Allocation
+MOCAPITAL,Capital Markets Theme,7.50,Tactical Satellite
