@@ -1,12 +1,10 @@
-ETF_Ticker,Current_Positioning,Tactical_Action,Tactical_Weight
-MONIFTY500,Tactical Dip,Accumulate Aggressively,Overweight
-NIFTYBEES,Capitulation Zone,Gradual Accumulation,Overweight
-NIF100BEES,Weak Consolidation,Selective Buying,Neutral
-MIDCAPETF,Markup Support,Controlled Accumulation,Neutral
-JUNIORBEES,Consolidation,Accumulation on Weakness,Neutral
-LIQUIDCASE,Capital Preservation,Maintain Buffer,Overweight
-GOLDBEES,Extended Consolidation,Strategic Hold,Neutral
-SILVERBEES,Extended Consolidation,Strategic Hold,Neutral
-MON100,Climactic Markup,Profit Harvesting,Underweight
-MASPTOP50,Mature Markup,Reduce Incremental Exposure,Underweight
-MOCAPITAL,Structural Trend,Maintain Tactical Exposure,Neutral
+ETF_Ticker,Buy_Zone_Rule,Accumulation_Trigger,Trend_Status
+MONIFTY500,=IF(Close_Value<DMA20_Value,"BUY","WAIT"),High Priority Buy,=IF(Close_Value>DMA200_Value,"BULLISH","BEARISH")
+NIFTYBEES,=IF(Close_Value<DMA20_Value,"BUY","WAIT"),High Priority Buy,=IF(Close_Value>DMA200_Value,"BULLISH","BEARISH")
+NIF100BEES,=IF(Close_Value<DMA50_Value,"BUY","WAIT"),Gradual Accumulation,=IF(Close_Value>DMA200_Value,"BULLISH","BEARISH")
+MIDCAPETF,=IF(Close_Value<=DMA50_Value*1.02,"BUY","WAIT"),Alpha Accumulation,=IF(Close_Value>DMA200_Value,"BULLISH","BEARISH")
+JUNIORBEES,=IF(Close_Value<=DMA200_Value*1.03,"BUY","WAIT"),Controlled Buying,=IF(Close_Value>DMA200_Value,"BULLISH","BEARISH")
+MON100,=IF(Close_Value<=DMA200_Value*1.10,"BUY","WAIT"),Limited Exposure,=IF(Close_Value>DMA200_Value,"BULLISH","BEARISH")
+MASPTOP50,=IF(Close_Value<=DMA50_Value,"BUY","WAIT"),Selective Entry,=IF(Close_Value>DMA200_Value,"BULLISH","BEARISH")
+GOLDBEES,=IF(Close_Value<DMA200_Value,"BUY","WAIT"),Strategic Hedge Addition,=IF(Close_Value>DMA200_Value,"BULLISH","BEARISH")
+SILVERBEES,=IF(Close_Value<=DMA50_Value,"BUY","WAIT"),Tactical Hedge,=IF(Close_Value>DMA200_Value,"BULLISH","BEARISH")
