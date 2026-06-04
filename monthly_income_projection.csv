@@ -1,0 +1,5 @@
+Input_Parameter,Value,Formula_Logic
+Corpus_Value,10000000,Base Retirement Corpus Capital
+Target_Withdrawal_Rate,6.00%,Target Sustainable Withdrawal Rate
+Annual_Income_Target,=B2*B3,Calculated Annualized Income Target
+Monthly_Income_Target,=B4/12,Calculated Monthly Systemic Cash Distribution
