@@ -41,7 +41,7 @@ for _, row in master.iterrows():
             continue
 
         # EXACT MATCH
-       print(f"{symbol} -> {amfi_scheme}")
+      
 
             nav_found = nav
             matched_scheme = amfi_scheme
