@@ -1,17 +1,12 @@
 SYMBOL,SCHEME_NAME
-MONIFTY500	Motilal Oswal Nifty 500 ETF
-NIF100BEES	Nippon India ETF Nifty 100
-NIFTYBEES	Nippon India ETF Nifty 50 BeES
-JUNIORBEES	Nippon India ETF Nifty Next 50 Junior BeES
-MIDCAPETF	Mirae Asset Nifty Midcap 150 ETF
-LIQUIDCASE	Zerodha Nifty 1D Rate Liquid ETF
-MON100	Motilal Oswal NASDAQ 100 ETF
-MASPTOP50	Mirae Asset S&P 500 Top 50 ETF
-GOLDBEES	Nippon India ETF Gold BeES
-SILVERBEES	Nippon India Silver ETF
-METALIETF	ICICI Prudential Nifty Metal ETF
-BANKBEES	Nippon India Etf Nifty Bank Bees
-CPSEETF	Cpse Etf
-ICICIB22	Bharat 22 ETF
-MOCAPITAL	Motilal Oswal Nifty Capital Market ETF
-INFRAIETF	ICICI Prudential Nifty Infrastructure ETF
+NIFTYBEES,Nippon India ETF Nifty BeES
+NIF100BEES,Nippon India ETF Nifty 100 BeES
+JUNIORBEES,Nippon India ETF Junior BeES
+MON100,Motilal Oswal Nasdaq 100 ETF
+MONIFTY500,Motilal Oswal Nifty 500 ETF
+MASPTOP50,Mirae Asset S&P 500 Top 50 ETF
+GOLDBEES,Nippon India ETF Gold BeES
+SILVERBEES,Nippon India Silver ETF
+BANKBEES,Nippon India ETF Bank BeES
+CPSEETF,CPSE ETF
+ICICI22,ICICI Bharat 22 ETF
