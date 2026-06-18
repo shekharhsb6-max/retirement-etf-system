@@ -1,20 +1,14 @@
 import pandas as pd
 import requests
 
-print("Loading ETF_MASTER.csv...")
-
 master = pd.read_csv("ETF_MASTER.csv")
-
-print(f"{len(master)} ETFs loaded")
-
-print("Downloading AMFI NAV data...")
 
 url = "https://www.amfiindia.com/spages/NAVAll.txt"
 
 response = requests.get(url, timeout=60)
 response.raise_for_status()
 
-amfi_data = response.text.splitlines()
+amfi_data = response.text
 
 rows = []
 
@@ -24,9 +18,8 @@ for _, row in master.iterrows():
     scheme_name = str(row["SCHEME_NAME"]).strip()
 
     nav_found = ""
-    matched_scheme = ""
 
-    for line in amfi_data:
+    for line in amfi_data.splitlines():
 
         cols = line.split(";")
 
@@ -40,33 +33,16 @@ for _, row in master.iterrows():
         except:
             continue
 
-        # EXACT MATCH
-      
+        if scheme_name.lower() in amfi_scheme.lower():
 
             nav_found = nav
-            matched_scheme = amfi_scheme
-
             break
 
-    if nav_found == "":
-        print(f"NO MATCH: {symbol} -> {scheme_name}")
-    else:
-        print(f"MATCHED: {symbol} -> {nav_found}")
+    rows.append([symbol, nav_found])
 
-    rows.append([
-        symbol,
-        nav_found
-    ])
+df = pd.DataFrame(rows, columns=["SYMBOL", "NAV"])
 
-df = pd.DataFrame(
-    rows,
-    columns=["SYMBOL", "NAV"]
-)
+df.to_csv("ETF_NAV.csv", index=False)
 
-df.to_csv(
-    "ETF_NAV.csv",
-    index=False
-)
-
-print("\nETF_NAV.csv created successfully")
 print(df)
+print("ETF_NAV.csv updated successfully")
