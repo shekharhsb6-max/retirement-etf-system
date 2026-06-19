@@ -1,7 +1,0 @@
-Parameter,Threshold,Action,Current_Status_Formula
-Allocation Drift,+/- 20%,Rebalance Position,=IF(ABS(Current_Alloc_Cell-Target_Alloc_Cell)/Target_Alloc_Cell>=0.2,"TRIGGER REBALANCE","COMPLIANT")
-Single ETF Weight,15.00%,Trim Exposure,=IF(Current_ETF_Weight_Cell>0.15,"TRIGGER TRIM","COMPLIANT")
-Cash Allocation,10.00%,Raise Liquidity,=IF(Current_Cash_Weight_Cell<0.10,"TRIGGER LIQUIDITY GENERATION","COMPLIANT")
-Gold + Silver,20.00%,Partial Profit Booking,=IF(SUM(Gold_Weight_Cell,Silver_Weight_Cell)>0.20,"TRIGGER PROFIT TAKING","COMPLIANT")
-Global Allocation,30.00%,Reduce Tactical Exposure,=IF(SUM(MON100_Weight_Cell,MASP50_Weight_Cell)>0.30,"TRIGGER RISK REDUCTION","COMPLIANT")
-Monthly Drawdown,8.00%,Activate Defensive Overlay,=IF(Current_Monthly_Drawdown_Cell>0.08,"ACTIVATE HEDGE OVERLAY","COMPLIANT")
