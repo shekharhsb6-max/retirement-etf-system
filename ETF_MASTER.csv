@@ -8,6 +8,10 @@ MASPTOP50,Mirae Asset S&P 500 Top 50 ETF
 GOLDBEES,Nippon India ETF Gold BeES
 SILVERBEES,Nippon India Silver ETF
 BANKBEES,Nippon India ETF Nifty Bank BeES
-CPSEETF,CPSE ETF
+CPSEETF,CPSE ETFTF
 MOCAPITAL,Motilal Oswal Nifty Capital Market ETF
-
+GROWWCAPM,Groww Nifty Capital Markets ETF
+INFRAIETF,ICICI Prudential Nifty Infrastructure ETF,
+METALIETF,ICICI Prudential Nifty Metal ETF
+GROWWMETAL,Groww Nifty Metal ETF
+TATSILV,Tata Silver ETF
